@@ -11,6 +11,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.recuperandodados.utils.Objeto;
+
 import java.io.Serializable;
 
 public class MainActivity extends AppCompatActivity {
@@ -37,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
             Objeto objeto = (Objeto) savedInstanceState.getSerializable("NUMERO");
             int numero = objeto.numero;
             tvMensagem.setText("Eu memorizei: " + numero);
+            etNumero.setText(String.valueOf(numero));
         }
     }
 
@@ -52,7 +55,4 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private class Objeto implements Serializable {
-        int numero;
-    }
 }
