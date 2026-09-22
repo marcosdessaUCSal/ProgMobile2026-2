@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <com.testecanvas.canvas.DesenhoCanvas
+        android:id="@+id/canvas"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#2D387E"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#7E86B5"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp">
+
+            <Button
+                android:id="@+id/btnCesq"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#C4DDF8"
+                android:elevation="8dp"
+                android:onClick="onClickHandleBtns"
+                android:text="C-ESQ"
+                android:textSize="20dp"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/btnCima"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FDD835"
+                android:elevation="8dp"
+                android:onClick="onClickHandleBtns"
+                android:text="CIMA"
+                android:textColor="#3949AB"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/btnCdir"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#C4DDF8"
+                android:elevation="8dp"
+                android:onClick="onClickHandleBtns"
+                android:text="C-DIR"
+                android:textSize="20dp"
+                app:cornerRadius="10dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp">
+
+            <Button
+                android:id="@+id/btnEsq"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FDD835"
+                android:elevation="8dp"
+                android:onClick="onClickHandleBtns"
+                android:text="ESQ"
+                android:textColor="#3949AB"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#F4511E"
+                android:elevation="8dp"
+                android:onClick="onClickHandleBtns"
+                android:text="RESET"
+                android:textColor="#F4F1F1"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/btnDir"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FDD835"
+                android:elevation="8dp"
+                android:onClick="onClickHandleBtns"
+                android:text="DIR"
+                android:textColor="#3949AB"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:cornerRadius="10dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp">
+
+            <Button
+                android:id="@+id/btnBesq"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#C4DDF8"
+                android:elevation="8dp"
+                android:onClick="onClickHandleBtns"
+                android:text="B-ESQ"
+                android:textSize="20dp"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/btnBaixo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FDD835"
+                android:elevation="8dp"
+                android:onClick="onClickHandleBtns"
+                android:text="BAIXO"
+                android:textColor="#3949AB"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/btnBdir"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#C4DDF8"
+                android:elevation="8dp"
+                android:onClick="onClickHandleBtns"
+                android:text="B-DIR"
+                android:textSize="20dp"
+                app:cornerRadius="10dp" />
+        </TableRow>
+
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
